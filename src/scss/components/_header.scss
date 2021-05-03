@@ -18,12 +18,10 @@ header {
     }
 
     &__right {
-      flex-basis: 60%;
+      flex-basis: 50%;
 
       .search {
         &--name {
-          margin-right: 3rem;
-
           input {
             padding: 0.6rem 0 0.6rem 2rem;
             background-color: $background-color;
@@ -53,19 +51,6 @@ header {
               width: 3rem;
               height: 3rem;
             }
-          }
-        }
-
-        &--year {
-          background-color: $background-color;
-          cursor: pointer;
-          padding: 0.6rem 6.1rem 0.6rem 6.1rem;
-          border-radius: 1rem;
-          color: rgba($primary-color, 0.5);
-          font-size: 2.4rem;
-
-          &:hover {
-            background-color: $background-color-hover;
           }
         }
       }
@@ -99,16 +84,6 @@ header {
     .nav {
       &__right {
         flex-direction: column;
-
-        .search {
-          &--name {
-            margin-right: 0;
-          }
-
-          &--year {
-            margin-top: 1rem;
-          }
-        }
       }
       .imdb-link {
         margin-top: 1rem;

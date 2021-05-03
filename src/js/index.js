@@ -3,7 +3,6 @@ import { fetchMovieList } from "./api/fetchMovieList";
 
 const movieList = document.getElementById("movie-list");
 const movieNameForm = document.getElementById("movie-name");
-const movieYear = document.getElementById("movie-year");
 
 const removeAllChildNodes = (parent) => {
   while (parent.firstChild) {
