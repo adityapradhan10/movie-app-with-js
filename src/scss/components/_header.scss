@@ -1,0 +1,137 @@
+header {
+  background-color: $secondary-color;
+  min-height: 10rem;
+  padding: 2rem 0;
+
+  .nav {
+    width: 90%;
+    margin: 0 auto;
+
+    &__left {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 3.6rem;
+
+      .logo {
+        color: $support-color;
+      }
+    }
+
+    &__right {
+      flex-basis: 60%;
+
+      .search {
+        &--name {
+          margin-right: 3rem;
+
+          input {
+            padding: 0.6rem 0 0.6rem 2rem;
+            background-color: $background-color;
+            border-top-left-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+            color: $primary-color;
+            font-size: 2.4rem;
+
+            &::placeholder {
+              color: rgba($primary-color, 0.5);
+            }
+          }
+
+          button {
+            padding: 0.4rem 2rem 0.3rem 2rem;
+            border-top-right-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            background-color: $background-color;
+            color: $primary-color;
+            cursor: pointer;
+
+            &:hover {
+              background-color: $background-color-hover;
+            }
+
+            img {
+              width: 3rem;
+              height: 3rem;
+            }
+          }
+        }
+
+        &--year {
+          background-color: $background-color;
+          cursor: pointer;
+          padding: 0.6rem 6.1rem 0.6rem 6.1rem;
+          border-radius: 1rem;
+          color: rgba($primary-color, 0.5);
+          font-size: 2.4rem;
+
+          &:hover {
+            background-color: $background-color-hover;
+          }
+        }
+      }
+    }
+
+    .imdb-link {
+      background-color: $support-color;
+      color: $text-color;
+      font-size: 2.8rem;
+      font-weight: 600;
+      padding: 0.6rem 6.1rem;
+      border-radius: 1rem;
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: 998px) {
+  .nav {
+    flex-direction: column;
+
+    &__right {
+      margin-top: 1rem;
+      align-items: stretch;
+    }
+  }
+}
+
+@media only screen and (max-width: 627px) {
+  header {
+    .nav {
+      &__right {
+        flex-direction: column;
+
+        .search {
+          &--name {
+            margin-right: 0;
+          }
+
+          &--year {
+            margin-top: 1rem;
+          }
+        }
+      }
+      .imdb-link {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 412px) {
+  header {
+    text-align: center;
+    .nav {
+      &__right {
+        flex-direction: column;
+
+        .search {
+          &--name {
+            input {
+              width: 90%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.movies {
+  width: 90%;
+  margin: 0 auto;
+  padding: 3rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6.2rem;
+  justify-content: space-evenly;
+
+  .movie {
+    position: relative;
+    cursor: pointer;
+    &__poster {
+      border-top-left-radius: 1.5rem;
+      border-top-right-radius: 1.5rem;
+    }
+
+    &__type {
+      position: absolute;
+      bottom: 20%;
+      padding: 0.2rem 2.6rem;
+      background-color: $support-color;
+      border-top-right-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      font-size: 2rem;
+      font-weight: 500;
+    }
+
+    &__info {
+      background-color: $secondary-color;
+      padding: 0.7rem 2.6rem;
+      border-bottom-left-radius: 1.5rem;
+      border-bottom-right-radius: 1.5rem;
+      margin-top: -0.8rem;
+      width: auto;
+
+      &-year {
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: rgba($text-color, 0.75);
+      }
+
+      &-name {
+        font-size: 2.2rem;
+        font-weight: 500;
+      }
+    }
+  }
+}

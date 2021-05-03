@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>The movie app</title>
+  </head>
+  <body>
+    <header class="flex align-center">
+      <nav class="nav flex justify-sb align-center">
+        <a href="./index.html"
+          ><div class="nav__left">
+            the <span class="logo">movie</span> app
+          </div></a
+        >
+
+        <div class="nav__right search flex align-center">
+          <form class="search--name flex align-center flex-grow">
+            <input type="text" placeholder="search" class="flex-grow" />
+            <button type="submit">
+              <img src="./assets/img/search-logo.svg" alt="Search Logo" />
+            </button>
+          </form>
+          <button class="search--year">year</button>
+        </div>
+      </nav>
+    </header>
+
+    <div class="movies">
+      <div class="movie">
+        <a href="./single.html">
+          <img
+            src="https://m.media-amazon.com/images/M/MV5BZmQ5NGFiNWEtMmMyMC00MDdiLTg4YjktOGY5Yzc2MDUxMTE1XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX1200.jpg"
+            alt="Movie poster"
+            class="movie__poster"
+            width="250px"
+            height="365px"
+          />
+          <div class="movie__type">Series</div>
+          <div class="movie__info">
+            <p class="movie__info-year">2002-2007</p>
+            <p class="movie__info-name">Naruto</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
