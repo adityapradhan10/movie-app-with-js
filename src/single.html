@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script>
+      const url = new URL(window.location.href);
+      const imdbID = url.searchParams.get("imdbID");
+
+      if (imdbID === null) {
+        window.location.href = "./";
+      }
+    </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,53 +30,49 @@
 
         <div class="search flex align-center">
           <a
-            href="https://www.imdb.com/title/tt0409591/"
+            href=""
             target="”_blank”"
             rel="”noopener"
             noreferrer”
+            id="imdb-link"
             ><button class="imdb-link">Check it out on IMDb</button></a
           >
         </div>
       </nav>
     </header>
 
-    <div class="single">
+    <div class="single" id="single-movie">
       <div class="single__left">
         <img
-          src="https://m.media-amazon.com/images/M/MV5BZmQ5NGFiNWEtMmMyMC00MDdiLTg4YjktOGY5Yzc2MDUxMTE1XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX1200.jpg"
+          src="#"
           alt="Movie poster"
           class="single__poster"
+          id="poster"
           width="250px"
           height="365px"
         />
       </div>
       <div class="single__right">
-        <h1 class="single__name">Naruto</h1>
-        <p class="single__year">2002-2007</p>
-        <h2 class="single__plot">
-          Naruto Uzumaki, a mischievous adolescent ninja, struggles as he
-          searches for recognition and dreams of becoming the Hokage, the
-          village's leader and strongest ninja.
-        </h2>
-        <p class="single__director">Director: <span class="value">N/A</span></p>
-        <p class="single__writer">
-          Writer: <span class="value">Masashi Kishimoto</span>
+        <h1 class="single__name" id="name"></h1>
+        <p class="single__year" id="year"></p>
+        <h2 class="single__plot" id="plot"></h2>
+        <p class="single__director">
+          Director: <span class="value" id="director"></span>
         </p>
-        <p class="single__type">Type: <span class="value">series</span></p>
+        <p class="single__writer">
+          Writer: <span class="value" id="writer"></span>
+        </p>
+        <p class="single__type">Type: <span class="value" id="type"></span></p>
         <p class="single__duration">
-          Runtime: <span class="value">24 min</span>
+          Runtime: <span class="value" id="duration"></span>
         </p>
         <p class="single__genre">
           Genre:
-          <span class="value"
-            >Animation, Action, Adventure, Comedy, Fantasy</span
-          >
+          <span class="value" id="genre"></span>
         </p>
         <p class="single__actors">
           Actors:
-          <span class="value"
-            >Junko Takeuchi, Maile Flanagan, Kate Higgins, Chie Nakamura</span
-          >
+          <span class="value" id="actors"></span>
         </p>
       </div>
     </div>
