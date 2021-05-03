@@ -9,7 +9,6 @@ module.exports = {
   plugins: [
     new Dotenv({
       path: "./.env",
-      safe: true,
     }),
     new HtmlWebpackPlugin({
       template: "./src/index.html",

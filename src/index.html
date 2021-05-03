@@ -21,34 +21,25 @@
         >
 
         <div class="nav__right search flex align-center">
-          <form class="search--name flex align-center flex-grow">
-            <input type="text" placeholder="search" class="flex-grow" />
+          <form
+            class="search--name flex align-center flex-grow"
+            id="movie-name"
+          >
+            <input
+              type="text"
+              placeholder="search"
+              class="flex-grow"
+              required
+            />
             <button type="submit">
               <img src="./assets/img/search-logo.svg" alt="Search Logo" />
             </button>
           </form>
-          <button class="search--year">year</button>
+          <button class="search--year" id="movie-year">year</button>
         </div>
       </nav>
     </header>
 
-    <div class="movies">
-      <div class="movie">
-        <a href="./single.html">
-          <img
-            src="https://m.media-amazon.com/images/M/MV5BZmQ5NGFiNWEtMmMyMC00MDdiLTg4YjktOGY5Yzc2MDUxMTE1XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX1200.jpg"
-            alt="Movie poster"
-            class="movie__poster"
-            width="250px"
-            height="365px"
-          />
-          <div class="movie__type">Series</div>
-          <div class="movie__info">
-            <p class="movie__info-year">2002-2007</p>
-            <p class="movie__info-name">Naruto</p>
-          </div>
-        </a>
-      </div>
-    </div>
+    <div class="movies" id="movie-list"></div>
   </body>
 </html>
